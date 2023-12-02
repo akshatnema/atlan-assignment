@@ -1,0 +1,139 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  font-display: fallback;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
+    monospace;
+}
+
+:root {
+  --primary: #f05;
+  --accent: #525fe1;
+  --light: #e7ecef;
+  --light-translucent: #e7ecef3a;
+  --dark: #030119;
+  --dark-translucent: #030119b1;
+  --grad: linear-gradient(270deg, #525ee0 35%, #18b0ec 100%);
+  --accent2: hsl(197, 85%, 51%);
+  --atlan: #2026d2;
+  --text: #3e4c59;
+  --white: #fff;
+  --table-border: #dddddd;
+}
+
+/* #light-mode {
+  --primary: #110f19;
+  --primary1: #151122;
+  --primary-active: #1a182d;
+  --b-w: white;
+  --accent: #4d38a2;
+  --sub-acc-1: #eee6ff;
+  --sub-acc-2: #6f678b;
+  --sender-bg: #19182a;
+  --sender-text: #ada9b9;
+  --user-text: white;
+  --time-text: #b0acae;
+  --chat-border: #2b2039;
+  --primary-translucent: #110f19b7;
+  --shadow-color: rgba(77, 56, 162, 0.5);
+  --tbd-chat-mail: #241937;
+}
+
+#dark-mode {
+  --primary: #110f19;
+  --primary1: #151122;
+  --primary-active: #1a182d;
+  --b-w: white;
+  --accent: #4d38a2;
+  --sub-acc-1: #eee6ff;
+  --sub-acc-2: #6f678b;
+  --sender-bg: #19182a;
+  --sender-text: #ada9b9;
+  --user-text: white;
+  --time-text: #b0acae;
+  --chat-border: #2b2039;
+  --primary-translucent: #110f19b7;
+  --shadow-color: rgba(77, 56, 162, 0.5);
+  --tbd-chat-mail: #241937;
+} */
+
+/* body::-webkit-scrollbar {
+  width: 0.5rem;
+  cursor: pointer;
+}
+
+body::-webkit-scrollbar-track {
+  background-color: var(--dark-translucent);
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: var(--primary);
+  border-radius: 100rem;
+  cursor: pointer;
+  height: 10rem;
+} */
+
+Link {
+  text-decoration: none;
+  color: var(--light);
+}
+
+a {
+  text-decoration: none;
+  color: var(--light);
+}
+
+.hover-button {
+  display: inline-block;
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  background: var(--primary);
+  -webkit-transition-property: color;
+  transition-property: color;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+}
+.hover-button:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  border-radius: 50%;
+  background: var(--grad);
+  -webkit-transform: scale(1);
+  transform: scale(1);
+  -webkit-transition-property: transform;
+  transition-property: transform;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hover-button:hover,
+.hover-button:focus,
+.hover-button:active {
+  color: white;
+}
+.hover-button:hover:before,
+.hover-button:focus:before,
+.hover-button:active:before {
+  -webkit-transform: scale(0);
+  transform: scale(0);
+}
+
+button {
+  cursor: pointer;
+}

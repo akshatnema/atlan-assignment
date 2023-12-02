@@ -1,0 +1,5 @@
+User-agent: *
+Disallow: /dist/
+Disallow: /node_modules/
+Disallow: /src/
+Allow: /
