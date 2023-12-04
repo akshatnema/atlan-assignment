@@ -6,7 +6,7 @@ import { CSVLink } from "react-csv";
 
 const Output = () => {
   const [tab, setTab] = useState(0);
-  const { queryHistory } = useContext(MainContext);
+  const { queryHistory, setQueryHistory } = useContext(MainContext);
 
   const exportData = () => {
     console.log("Data to be exported");
@@ -16,19 +16,27 @@ const Output = () => {
     <div className='p-2 h-[40vh] overflow-clip'>
       {queryHistory.outputData.length > 0 ? (
         <>
-          <div className='mb-4 border-b border-solid border-[#2026d2] flex items-center'>
-            <span
-              className={`tabs ${tab === 0 ? "active" : ""} cursor-pointer`}
-              onClick={() => setTab(0)}
-            >
-              Output
-            </span>
-            <span
-              className={`tabs ${tab === 1 ? "active" : ""} cursor-pointer`}
-              onClick={() => setTab(1)}
-            >
-              Table Data
-            </span>
+          <div className="flex justify-between">
+            <div className='mb-4 border-b border-solid border-[#2026d2] flex items-center'>
+              <span
+                className={`tabs ${tab === 0 ? "active" : ""} cursor-pointer`}
+                onClick={() => setTab(0)}
+              >
+                Output
+              </span>
+              <span
+                className={`tabs ${tab === 1 ? "active" : ""} cursor-pointer`}
+                onClick={() => setTab(1)}
+              >
+                Table Data
+              </span>
+            </div>
+            <div className="underline hover:cursor-pointer hover:text-gray-400" onClick={() => setQueryHistory((prev) => ({
+              ...prev,
+              outputData: []
+            }))}>
+              Clear Output
+            </div>
           </div>
           <div className='flex justify-between items-end py-1 px-2'>
             <p className='text-2'>
