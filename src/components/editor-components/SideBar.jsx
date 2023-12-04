@@ -6,6 +6,7 @@ const SideBar = () => {
   const { queryHistory, setQueryHistory } = useContext(MainContext);
 
   return (
+    
     <div className='rounded-md m-4 h-full p-4 bg-gray-100 border-r border-gray-100 flex flex-col gap-2 justify-between'>
       <div className='min-h-[30vh]'>
         <div className="flex justify-between mb-2 gap-1">
@@ -34,6 +35,7 @@ const SideBar = () => {
         {queryHistory ? <Query type='history' /> : null}
       </div>
     </div>
+    
   );
 };
 

@@ -10,8 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-svg-core": "^6.5.1",
+    "@fortawesome/free-solid-svg-icons": "^6.5.1",
+    "@fortawesome/react-fontawesome": "^0.2.0",
     "@monaco-editor/react": "^4.6.0",
     "autoprefixer": "^10.4.16",
+    "flowbite-react": "^0.7.0",
     "font-awesome": "^4.7.0",
     "postcss": "^8.4.31",
     "react": "^18.2.0",
