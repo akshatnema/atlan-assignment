@@ -1,7 +1,7 @@
 import { useMemo, useState, lazy } from "react";
 import "./Editor.css";
 const SideBar = lazy(() => import("../editor-components/SideBar"));
-const CodeMirror = lazy(() => import("../editor-components/CodeMirror"));
+const CodeMirror = lazy(() => import("../editor-components/CodeEditor"));
 const Output = lazy(() => import("../editor-components/Output"));
 import MainContext from "../../context/QueryContext";
 
