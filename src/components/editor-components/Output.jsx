@@ -30,7 +30,7 @@ const Output = () => {
               Table Data
             </span>
           </div>
-          <div className='query-details'>
+          <div className='flex justify-between items-end py-1 px-2'>
             <p className='text-2'>
               {/* Showing{" "} */}
               <span>
