@@ -26,7 +26,7 @@ function Editor() {
             <div className='h-full col-span-2'>
               <SideBar />
             </div>
-            <div className='col-span-5 overflow-auto h-[85vh]'>
+            <div className='col-span-5 h-[85vh]'>
               <CodeMirror />
               <Output />
             </div>

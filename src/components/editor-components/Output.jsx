@@ -57,7 +57,7 @@ const Output = () => {
                 data={queryHistory.outputData}
                 filename={"dataOutput.csv"}
               >
-                <button onClick={exportData}>
+                <button onClick={exportData} className="text-gray-700 hover:text-gray-400">
                   Export <span className='fa fa-download'></span>
                 </button>
               </CSVLink>
