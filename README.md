@@ -2,7 +2,7 @@
 
 This project includes a SQL Query Executor at Frontend side only. This is part of Atlan Frontend Assignment, build using React + Vite + TailwindCSS.  It enables users to run SQL queries in an online editor, and analyze the output obtained as a result of running the queries. I used [**Monaco Editor**](https://github.com/suren-atoyan/monaco-react) to embed code editor inside webpage.
 
-<strong> Link to the application: https://atlan-akshat-assignment.netlify.app/</strong>
+<strong> Link to the application: https://akshat-atlan-assignment.netlify.app/</strong>
 
 ## Data
 
